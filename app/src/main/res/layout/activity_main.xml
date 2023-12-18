@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/bottom_shade"
+        app:title=" "
+
+
+
+        >
+        <TextView
+            android:id="@+id/txt_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationX="-10dp"
+            android:textSize="17dp"
+            android:fontFamily="@font/kalpurush"
+            android:textStyle="bold"
+            android:text="নতুন কাস্টমার/সাপ্লায়ার  "/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edName1H"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_main"
+        android:hint="Name"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edName1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edMoneyPaona1H"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/tk"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/edName1H"
+        android:layout_marginTop="5dp"
+        android:hint="পাওনা ">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edMoneyPaona1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+               />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edMoneyDena1H"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/tk"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/edMoneyPaona1H"
+        android:layout_marginTop="5dp"
+        android:hint="দেনা  ">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edMoneyDena1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edMobile1H"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_local_phone_24"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/edMoneyDena1H"
+        android:layout_marginTop="5dp"
+        app:prefixText="+88"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+
+        app:helperTextTextColor="#C50000"
+        android:hint="মোবাইল নাম্বার ">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edMobile1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:inputType="number"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </LinearLayout>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/details_edit_mainH"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/baseline_details_24"
+        android:layout_marginHorizontal="15dp"
+        android:layout_below="@+id/edMobile1H"
+        android:layout_marginTop="5dp"
+        app:helperText="Optional*"
+        android:hint="বিবরণ">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/details_edit_main"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <Button
+
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="নিশ্চিত"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="@color/theme"
+        android:layout_below="@id/details_edit_mainH"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <item
+        android:id="@+id/product_list"
+        android:icon="@drawable/baseline_list_alt_24"
+        android:iconTint="#000000"
+        android:title="Product List"
+        />
+
+        <item
+            android:id="@+id/trans_history"
+            android:icon="@drawable/baseline_history_24"
+            android:iconTint="#000000"
+            android:title="Transaction History"
+            />
+
+        <item
+            android:id="@+id/cng_pass"
+            android:icon="@drawable/baseline_security_24"
+            android:iconTint="#000000"
+            android:title="Change Password"
+            />
+
+        <item
+            android:id="@+id/report_bug"
+            android:icon="@drawable/baseline_bug_report_24"
+            android:iconTint="#000000"
+            android:title="Report a Bug"
+            />
+
+
+
+
+
+
+
+
+        >
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/baseline_share_24"
+            android:iconTint="#000000"
+            android:title="Share"
+            />
+
+
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/baseline_star_rate_24"
+            android:iconTint="#000000"
+            android:title="Rate Us"
+            />
+
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/baseline_local_phone_24"
+            android:iconTint="#000000"
+            android:title="Contact Us"
+            />
+
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/baseline_logout_24"
+        android:iconTint="#000000"
+        android:title="Log Out"
+        />
+
+
+
+
+
+
+
+
+</menu>

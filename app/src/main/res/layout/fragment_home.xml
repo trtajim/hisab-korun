@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    tools:context=".HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_home"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="12dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="5dp"
+
+        app:cardBackgroundColor="#FFFFFF">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View
+                android:layout_width="0.8dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="35dp"
+                android:background="#1F1E1E" />
+
+            <TextView
+                android:id="@+id/op1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মোট পাওনা"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:fontFamily="@font/ballo"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#07790C"
+                android:layout_marginTop="20dp"
+
+
+                android:translationX="-95dp"/>
+
+            <TextView
+                android:id="@+id/txt_paona1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/op1"
+                android:text="0 ৳"
+                android:gravity="center"
+                android:maxWidth="160dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/ballo"
+
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:translationX="-100dp"/>
+
+
+            <TextView
+
+                android:id="@+id/op2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মোট দেনা"
+                android:gravity="center"
+                android:fontFamily="@font/ballo"
+
+                android:layout_marginTop="20dp"
+
+                android:textSize="20dp"
+                android:layout_centerHorizontal="true"
+
+                android:textStyle="bold"
+                android:textColor="#AF0404"
+                android:translationX="95dp"/>
+
+            <TextView
+                android:layout_below="@+id/op2"
+                android:id="@+id/txt_dena1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 ৳"
+
+                android:gravity="center"
+                android:fontFamily="@font/ballo"
+
+                android:maxWidth="160dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="17dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:translationX="100dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <ListView
+        android:id="@+id/recycler_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_below="@+id/card_home"/>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:lottie_autoPlay="true"
+        android:layout_alignParentBottom="true"
+        app:lottie_rawRes="@raw/add_person2"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:foreground="@drawable/circle_cir"
+        app:lottie_loop="true"/>
+
+
+
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/no_data_img_home"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/no_data"
+        android:translationY="30dp"/>
+
+    <TextView
+        android:id="@+id/empty_txt_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="কোনো তথ্য পাওয়া যায়নি "
+        android:layout_below="@+id/no_data_img_home"
+        android:layout_centerHorizontal="true"
+        android:translationY="20dp"
+        android:visibility="gone"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

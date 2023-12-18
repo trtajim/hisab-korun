@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First shape with curved corners -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#000000" />
+            <!-- Apply corner radius -->
+            <corners android:radius="10dp" /> <!-- Adjust the value as needed -->
+        </shape>
+    </item>
+
+    <!-- Second shape with curved corners and stroke -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <!-- Apply corner radius -->
+            <corners android:radius="10dp" /> <!-- Adjust the value as needed -->
+        </shape>
+
+        <shape android:shape="rectangle">
+            <!-- Apply corner radius for stroke as well -->
+            <corners android:radius="10dp" />
+            <stroke
+                android:width="0dp"
+                android:color="#10000000" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".BugFragment">
+
+
+
+
+    <TextView
+
+        android:id="@+id/report_dev_txt_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report to the developers "
+        android:textStyle="bold"
+        android:textSize="25dp"
+
+        android:fontFamily="@font/ballo"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+
+
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dev: trtajimofficial1@gmail.com"
+        android:layout_below="@+id/report_dev_txt_op"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/ballo"/>
+
+    <TextView
+
+
+        android:id="@+id/via_txt_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> Report Via Email (to the Dev.)"
+        android:textSize="20dp"
+        android:fontFamily="@font/ballo"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt2"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:id="@+id/describe_contain_txt_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe the bug. The describe may contains:   ↓"
+        android:fontFamily="@font/ballo"
+        android:layout_below="@+id/via_txt_op"
+        android:layout_marginLeft="25dp"
+        android:textSize="18dp"/>
+    <TextView
+
+
+        android:id="@+id/describe_txt_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> Where did you faced the bug?\n> What the bug exactly was?\n> In which reason the bug appeared?\n> What are the possible fixes for the bugs?"
+        android:layout_below="@+id/describe_contain_txt_op"
+        android:fontFamily="@font/ballo"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:translationY="10dp"
+        android:layout_marginLeft="60dp"/>
+
+    <LinearLayout
+
+
+        android:id="@+id/txt6"
+        android:layout_below="@+id/describe_txt_op"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shade"
+        android:translationY="10dp"
+
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/baseline_attach_file_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attach a ScreenShot"
+            android:textStyle="bold"
+            android:fontFamily="@font/ballo"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+
+
+        android:id="@+id/txt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Describe Here:"
+        android:layout_below="@+id/txt6"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="25dp"
+        android:translationY="10dp"
+
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+
+
+        android:id="@+id/ed_bug"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp"
+        android:layout_toRightOf="@+id/txt7"
+        android:layout_below="@+id/txt6"
+        android:translationY="17dp"
+        android:text=""
+        android:textSize="14dp"
+
+        android:layout_marginLeft="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+
+
+        android:id="@+id/cancel_button_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@id/ed_bug"
+        android:translationY="10dp"
+
+
+        android:fontFamily="@font/ballo"
+        android:textStyle="bold"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="10dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+
+
+        android:id="@+id/btn_bug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_below="@id/ed_bug"
+        android:translationY="10dp"
+
+        android:layout_toRightOf="@+id/cancel_button_bug"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/ballo"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

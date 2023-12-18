@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="#FFFFFF"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/op_1_log"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bottom_curved"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hisab\nKorun"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:fontFamily="@font/auromiya"
+            android:textSize="40dp"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        android:layout_below="@+id/op_1_log"
+        android:layout_marginHorizontal="30dp"
+        android:translationY="-25dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* নিম্নোক্ত তথ্যগুলো দিয়ে সহযোগিতা করুন "
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ballo"
+                android:textSize="13dp"/>
+            <TextView
+                android:id="@+id/op2_lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="নাম"
+                android:textColor="#6B1616"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/ballo"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/name_ed_login"
+                android:layout_below="@+id/op2_lg"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:translationY="-5dp"
+
+                />
+
+            <TextView
+                android:layout_below="@+id/name_ed_login"
+                android:id="@+id/op33_lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="পাসওয়ার্ড "
+                android:textColor="#6B1616"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ballo"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/pass_ed_login"
+                android:layout_below="@+id/op33_lg"
+                android:layout_width="match_parent"
+                android:inputType="numberPassword"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:translationY="-5dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/pass_ed_login"
+                android:id="@+id/op333_lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="কনফার্ম পাসওয়ার্ড"
+                android:textColor="#6B1616"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ballo"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/con_pass_ed_login"
+                android:layout_below="@+id/op333_lg"
+                android:layout_width="match_parent"
+                android:inputType="numberPassword"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:translationY="-5dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/con_pass_ed_login"
+                android:id="@+id/op5_lg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="আপনার বর্তমান ব্যালেন্স"
+                android:textColor="#6B1616"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/ballo"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/tk_ed_login"
+                android:layout_below="@+id/op5_lg"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:translationY="-5dp"
+                />
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="নিশ্চিত"
+                android:layout_marginHorizontal="30dp"
+                android:backgroundTint="@color/theme"
+                android:fontFamily="@font/ballo"
+                android:textStyle="bold"
+                android:layout_below="@id/tk_ed_login"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
