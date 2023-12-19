@@ -27,7 +27,7 @@
         android:id="@+id/txt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dev: trtajimofficial1@gmail.com"
+        android:text="Dev: info@trtajim.xyz"
         android:layout_below="@+id/report_dev_txt_op"
         android:layout_marginLeft="30dp"
         android:textSize="15dp"

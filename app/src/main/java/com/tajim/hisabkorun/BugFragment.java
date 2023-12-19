@@ -37,7 +37,7 @@ public class BugFragment extends Fragment {
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setType("message/rfc822");
             emailIntent.setPackage("com.google.android.gm"); // Gmail package name
-            emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"trtajimofficial1@gmail.com"});
+            emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"info@trtajim.xyz"});
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "bug detected"+" com.tajim.hisabkorun");
             emailIntent.putExtra(Intent.EXTRA_TEXT, body);
 
