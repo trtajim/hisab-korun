@@ -26,29 +26,6 @@
             android:title="Report a Bug"
             />
 
-
-
-
-
-
-
-
-        >
-        <item
-            android:id="@+id/share"
-            android:icon="@drawable/baseline_share_24"
-            android:iconTint="#000000"
-            android:title="Share"
-            />
-
-
-        <item
-            android:id="@+id/rate_us"
-            android:icon="@drawable/baseline_star_rate_24"
-            android:iconTint="#000000"
-            android:title="Rate Us"
-            />
-
         <item
             android:id="@+id/contact_us"
             android:icon="@drawable/baseline_local_phone_24"
