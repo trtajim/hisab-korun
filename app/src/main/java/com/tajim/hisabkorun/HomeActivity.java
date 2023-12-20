@@ -113,7 +113,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     src_open = false;
                     src_ed_home.setVisibility(View.GONE);
-                    toolbar_home.setTitle("হিসাব করুন");
+                    toolbar_home.setTitle("Hisab Korun");
                     src_ed_home.setText("");
                     toolbar_home.setNavigationIcon(R.drawable.baseline_menu_24);
                     item.setIcon(R.drawable.baseline_search_24);
@@ -278,7 +278,7 @@ public class HomeActivity extends AppCompatActivity {
         if (src_open == true){
             src_open = false;
             src_ed_home.setVisibility(View.GONE);
-            toolbar_home.setTitle("হিসাব করুন");
+            toolbar_home.setTitle("Hisab Korun");
             toolbar_home.setNavigationIcon(R.drawable.baseline_menu_24);
             if (searchMenuItem != null) {
                 searchMenuItem.setIcon(R.drawable.baseline_search_24);

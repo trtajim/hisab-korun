@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                 }else {
-                    sqLiteDataBaseHisab.makeToast(this, "সকল তথ্য দিন");
+                    sqLiteDataBaseHisab.makeToast(this, "Please enter all information");
                 }
 
 

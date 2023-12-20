@@ -115,7 +115,7 @@ public class SearchFragment extends Fragment {
 
                 }else {
                     img_src_frg.setVisibility(View.VISIBLE);
-                    txt_src_frg.setText("কোনো তথ্য পাওয়া যায়নি । তথ্য খুঁজে পেতে সঠিক বানানে সার্চ করুন ");
+                    txt_src_frg.setText("No results found. Please search with the correct spelling to find information.");
 
                 }
                 cursor.close();

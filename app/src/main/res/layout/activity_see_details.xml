@@ -81,7 +81,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="তারিখ"
+            android:text="Date"
 
             />
 
@@ -93,7 +93,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="নাম"
+            android:text="Name"
             android:visibility="gone"
             />
 
@@ -105,7 +105,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="পেলাম"
+            android:text="Received Amount"
             />
 
         <TextView
@@ -116,7 +116,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="দিলাম"
+            android:text="Paid Amoount"
             />
 
         <TextView
@@ -127,7 +127,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="বিবরণ"
+            android:text="Details"
             />
         <TextView
             android:id="@+id/pabo_ly"
@@ -137,7 +137,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="আরো পাবো"
+            android:text="More to Receive"
             />
         <TextView
             android:id="@+id/dibo_ly"
@@ -147,7 +147,7 @@
             android:fontFamily="@font/ballo"
             android:gravity="center"
             android:padding="5dp"
-            android:text="আরো দিবো"
+            android:text="More to Pay"
             />
 
 

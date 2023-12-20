@@ -28,7 +28,7 @@
             android:textSize="17dp"
             android:fontFamily="@font/kalpurush"
             android:textStyle="bold"
-            android:text="নতুন কাস্টমার/সাপ্লায়ার  "/>
+            android:text="New Customer / Supplier"/>
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -57,7 +57,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_below="@+id/edName1H"
         android:layout_marginTop="5dp"
-        android:hint="পাওনা ">
+        android:hint="To receive">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edMoneyPaona1"
             android:layout_width="match_parent"
@@ -79,7 +79,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_below="@+id/edMoneyPaona1H"
         android:layout_marginTop="5dp"
-        android:hint="দেনা  ">
+        android:hint="To Pay  ">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edMoneyDena1"
             android:layout_width="match_parent"
@@ -104,7 +104,7 @@
         app:counterMaxLength="11"
 
         app:helperTextTextColor="#C50000"
-        android:hint="মোবাইল নাম্বার ">
+        android:hint="Phone number">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edMobile1"
             android:layout_width="match_parent"
@@ -137,7 +137,7 @@
         android:layout_below="@+id/edMobile1H"
         android:layout_marginTop="5dp"
         app:helperText="Optional*"
-        android:hint="বিবরণ">
+        android:hint="Details">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/details_edit_main"
             android:layout_width="match_parent"
@@ -156,7 +156,7 @@
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="নিশ্চিত"
+        android:text="Submit"
         android:layout_marginHorizontal="20dp"
         android:backgroundTint="@color/theme"
         android:layout_below="@id/details_edit_mainH"
