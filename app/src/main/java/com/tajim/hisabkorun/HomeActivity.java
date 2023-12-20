@@ -19,6 +19,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
@@ -178,6 +180,14 @@ public class HomeActivity extends AppCompatActivity {
                         },()->{});
 
                     main.closeDrawer(GravityCompat.START);
+                } else if (item.getItemId()==R.id.privacy_policy) {
+                    Toast.makeText(HomeActivity.this, "Privacy Policy", Toast.LENGTH_SHORT).show();
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.trtajim.xyz/apps/hisab_korun/privacy_policy.html"));
+                    startActivity(myIntent);
+                } else if (item.getItemId()==R.id.terms_conditions) {
+                    Toast.makeText(HomeActivity.this, "Terms and Conditions", Toast.LENGTH_SHORT).show();
+                    Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.trtajim.xyz/apps/hisab_korun/terms_conditions.html"));
+                    startActivity(myIntent);
                 }else {}
                 return true;
             }
