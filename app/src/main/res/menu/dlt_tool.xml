@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+
+
+        android:id="@+id/edit_tool"
+        android:title="এডিট"
+        android:icon="@drawable/baseline_more_vert_24"
+        app:showAsAction="never"
+        
+
+
+
+        />
+
+    <item
+
+
+        android:id="@+id/dtl_tool"
+        android:title="বিবরণ"
+        android:icon="@drawable/baseline_more_vert_24"
+        app:showAsAction="never"
+
+
+
+        />
+
+    <item
+
+
+        android:id="@+id/dlt_tool"
+        android:title="ডিলেট করুন "
+        android:icon="@drawable/baseline_more_vert_24"
+        app:showAsAction="never"
+
+        />
+
+    <item
+
+
+        android:id="@+id/msg_tool"
+        android:title="মেসেজ পাঠান"
+        android:icon="@drawable/baseline_more_vert_24"
+        app:showAsAction="never"
+
+
+        />
+
+
+
+
+</menu>

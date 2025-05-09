@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SeeDetailsActivity">
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_see_Details"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        android:background="@drawable/bottom_shade"
+        app:title=" "
+
+
+
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/name_See_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All transactions "
+            android:layout_toRightOf="@+id/circle_txt_dtl"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:translationX="-20dp"
+
+            android:fontFamily="@font/ballo"
+            android:textStyle="bold"/>
+
+
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <HorizontalScrollView
+        android:layout_below="@+id/tool_see_Details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_alignParentTop="true"
+        android:id="@+id/opo_dtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/date_ly"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="তারিখ"
+
+            />
+
+        <TextView
+            android:id="@+id/name_lyy"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="নাম"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/pelam_ly"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="পেলাম"
+            />
+
+        <TextView
+            android:id="@+id/dilam_ly"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="দিলাম"
+            />
+
+        <TextView
+            android:id="@+id/details_ly"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="বিবরণ"
+            />
+        <TextView
+            android:id="@+id/pabo_ly"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="আরো পাবো"
+            />
+        <TextView
+            android:id="@+id/dibo_ly"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shade"
+            android:fontFamily="@font/ballo"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="আরো দিবো"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/opo_dtl"
+        android:id="@+id/recycler_see_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+
+
+</RelativeLayout>
