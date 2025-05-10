@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.GradientDrawable;
@@ -165,8 +166,17 @@ public class HomeActivity extends AppCompatActivity {
 
                     });
                 }else if (item.getItemId()==R.id.log_out) {
+                    showCustomAlert(R.raw.exit,"Are you sure you want to log out? by proceeding, all of your data will be deleted","Log out","Not now", ()->{
+                        SharedPreferences sharedPreferences;
+                        SharedPreferences.Editor editor;
+                        sharedPreferences = getSharedPreferences(getString(R.string.app_name), MODE_PRIVATE);
+                        editor = sharedPreferences.edit();
+                        editor.putInt("first",0);
+                        editor.apply();
+                        sqLiteDataBaseHisab.clearAllData();
+                        startActivity(new Intent(HomeActivity.this, LoginActivity.class));
+                        },()->{});
 
-                    sqLiteDataBaseHisab.makeToast(HomeActivity.this, "Thanks for your interest, it will be available soon");
                     main.closeDrawer(GravityCompat.START);
                 }else {}
                 return true;

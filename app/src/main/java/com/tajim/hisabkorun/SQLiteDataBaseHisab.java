@@ -179,6 +179,13 @@ public class SQLiteDataBaseHisab extends SQLiteOpenHelper {
 
     }
 
+    public void clearAllData(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete("details_table", null, null); // replace with your table name
+        db.delete("hisab_table", null, null); // replace with your table name
+        db.close();
+    }
+
 
 
 
