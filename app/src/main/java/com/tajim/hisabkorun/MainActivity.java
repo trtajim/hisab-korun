@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (HomeActivity.mainCon.equals("edit")){
-            txt_main.setText("এডিট করুন ");
+            txt_main.setText("Edit Info");
 
             edName1.setText(HomeFragment.name_home);
             edMobile1.setText("0"+HomeFragment.mobile_home);
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                 }else {
-                    sqLiteDataBaseHisab.makeToast(this,"সকল তথ্য দিন " );
+                    sqLiteDataBaseHisab.makeToast(this,"Enter all information" );
                     return;
                 }
                 Cursor cursor = sqLiteDataBaseHisab.srcDataSQLbyName(name);
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
                         });
 
                     }else {
-                        sqLiteDataBaseHisab.makeToast(this, "দুঃখিত , এই নামটি আগে থেকেই রয়েছে ");
+                        sqLiteDataBaseHisab.makeToast(this, "Sorry, this name already exists");
                     }
 
 
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         }else if (HomeActivity.mainCon.equals("edit_pass")){
-            txt_main.setText("পাসওয়ার্ড পরিবর্তন");
+            txt_main.setText("Change Password");
             edMoneyPaona1H.setVisibility(View.GONE);
             edName1H.setVisibility(View.GONE);
             details_ed_mainH.setVisibility(View.GONE);
@@ -206,18 +206,18 @@ public class MainActivity extends AppCompatActivity {
 
 
                     } else {
-                        sqLiteDataBaseHisab.makeToast(this, "সকল তথ্য দিন ");
+                        sqLiteDataBaseHisab.makeToast(this, "Enter all information");
                         return;
                     }
                 } else {
-                    sqLiteDataBaseHisab.makeToast(this, "সকল তথ্য দিন ");
+                    sqLiteDataBaseHisab.makeToast(this, "Enter all information");
                     return;
                 }
                 showDiaouge(this, () -> {
 
                     Cursor cursor = sqLiteDataBaseHisab.srcDataSQLbyName(name);
                     if (cursor != null && cursor.moveToFirst()) {
-                        sqLiteDataBaseHisab.makeToast(this, "দুঃখিত , এই নামটি আগে থেকেই রয়েছে ");
+                        sqLiteDataBaseHisab.makeToast(this, "Sorry, this name already exists");
                     } else {
                         Random rnd = new Random();
                         int minValue = 5; // Minimum value to avoid light colors
@@ -234,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
 
                         }
 
-                        sqLiteDataBaseHisab.makeToast(this, "সম্পন্ন ");
+                        sqLiteDataBaseHisab.makeToast(this, "Done ");
 
                         long currentTimeMillis = System.currentTimeMillis();
                         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd h:mm a", Locale.getDefault());
@@ -269,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
 
             } else {
                 sheetDialog.dismiss();
-                ed_bd.setError("ভুল পাসওয়ার্ড ");
+                ed_bd.setError("Wrong Password");
 
 
             }
@@ -298,7 +298,7 @@ public class MainActivity extends AppCompatActivity {
                     sheetDialog.dismiss();
                     onSuccess.run();
                 } else {
-                    ed_bd.setError("ভুল পাসওয়ার্ড ");
+                    ed_bd.setError("Wrong password");
 
 
                 }

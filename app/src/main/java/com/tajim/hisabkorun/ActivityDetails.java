@@ -79,7 +79,7 @@ public class ActivityDetails extends AppCompatActivity {
                 showDiaouge(this, () -> {
                     sqLiteDataBaseHisab.deleteDataSQLbyID(HomeFragment.id_home);
                     onBackPressed();
-                    sqLiteDataBaseHisab.makeToast(this, "সম্পন্ন");
+                    sqLiteDataBaseHisab.makeToast(this, "Done");
                 });
 
             });
@@ -134,13 +134,13 @@ public class ActivityDetails extends AppCompatActivity {
         if (HomeFragment.statuss!= null) {
             if (HomeFragment.statuss.equals("paona")) {
 
-                money_details.setText("পাওনা: " + HomeFragment.money_home + "৳");
-                msg_body = "'হিসাব করুন' এর তথ্যমতে " + LoginActivity.name_usr + " আপনার কাছে " + HomeFragment.money_home + "৳ পাবে । " + " দয়া করে দ্রুত শোধ করুন ";
+                money_details.setText("To receive: " + HomeFragment.money_home + "৳");
+                msg_body = "'According to the records of hisab korun, " + LoginActivity.name_usr + " still has an outstanding amount of " + HomeFragment.money_home + "৳ from you. Please make the payment at your earliest convenience.'";
 
             } else {
 
-                money_details.setText("দেনা: " + HomeFragment.money_home + "৳");
-                msg_body = "'হিসাব করুন' এর তথ্যমতে " + "আপনি " + LoginActivity.name_usr + " এর কাছে " + HomeFragment.money_home + "৳ পাবেন ";
+                money_details.setText("To pay: " + HomeFragment.money_home + "৳");
+                msg_body = "'According to the records of 'Hisab Korun', you will receive " + HomeFragment.money_home + "৳ from " + LoginActivity.name_usr;
 
 
             }
@@ -199,7 +199,7 @@ public class ActivityDetails extends AppCompatActivity {
                 dena_details = 0;
 
             } else {
-                sqLiteDataBaseHisab.makeToast(this, "সকল তথ্য দিন ");
+                sqLiteDataBaseHisab.makeToast(this, "Please enter all information");
                 return;
             }
 
@@ -211,7 +211,7 @@ public class ActivityDetails extends AppCompatActivity {
                 } else {
                 }
 
-                sqLiteDataBaseHisab.makeToast(this, "সম্পন্ন ");
+                sqLiteDataBaseHisab.makeToast(this, "done ");
 
                 sqLiteDataBaseHisab.editDataSQLbyID(HomeFragment.id_home, paona_details, dena_details);
                 Cursor cursor = sqLiteDataBaseHisab.getResultSQL(HomeFragment.id_home);
@@ -245,7 +245,7 @@ public class ActivityDetails extends AppCompatActivity {
 
             } else {
                 sheetDialog.dismiss();
-                ed_bd.setError("ভুল পাসওয়ার্ড");
+                ed_bd.setError("Wrong Password");
 
 
             }
@@ -274,7 +274,7 @@ public class ActivityDetails extends AppCompatActivity {
                     onSuccess.run();
                 } else {
 
-                    ed_bd.setError("ভুল পাসওয়ার্ড");
+                    ed_bd.setError("Wrong Password");
 
 
                 }
@@ -311,10 +311,10 @@ public class ActivityDetails extends AppCompatActivity {
                     SmsManager smsManager = SmsManager.getDefault();
                     ArrayList<String> messageParts = smsManager.divideMessage(body);
                     smsManager.sendMultipartTextMessage(numberr, null, messageParts, null, null);
-                    sqLiteDataBaseHisab.makeToast(context, "মেসেজ পাঠানো হয়েছে !");
+                    sqLiteDataBaseHisab.makeToast(context, "Message sent !");
 
                 } catch (Exception e) {
-                    sqLiteDataBaseHisab.makeToast(context, "মেসেজ পাঠানো সম্ভব হয়নি " + e.getMessage());
+                    sqLiteDataBaseHisab.makeToast(context, "failed to send message" + e.getMessage());
                     Log.e("SMS Error", e.getMessage());
                     e.printStackTrace();
                 }}

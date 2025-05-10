@@ -125,7 +125,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_below="@+id/rel_dl"
         android:layout_marginTop="5dp"
-        android:hint="দিলাম ">
+        android:hint="Amount Paid">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/dilam_edit_details"
             android:layout_width="match_parent"
@@ -146,7 +146,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_below="@+id/dilam_edit_detailsH"
         android:layout_marginTop="5dp"
-        android:hint="পেলাম ">
+        android:hint="Amount Received">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/pelam_edit_details"
             android:layout_width="match_parent"
@@ -171,7 +171,7 @@
         android:layout_below="@+id/pelam_edit_detailsH"
         android:layout_marginTop="5dp"
         app:helperText="Optional*"
-        android:hint="বিবরণ">
+        android:hint="Details">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/details_edit_details"
             android:layout_width="match_parent"
@@ -186,18 +186,12 @@
         android:id="@+id/btn_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="নিশ্চিত"
+        android:text="Submit"
         android:layout_marginHorizontal="20dp"
         android:layout_below="@+id/op_1_dtl"
 
         android:backgroundTint="@color/theme"
         />
-
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv2"
-        android:layout_centerInParent="true"/>-->
 
     <RelativeLayout
         android:id="@+id/op_1_dtl"
@@ -219,7 +213,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="মেসেজ পাঠান "
+            android:text="Send Message "
             android:fontFamily="@font/ballo"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/chk_msg_dtl"/>

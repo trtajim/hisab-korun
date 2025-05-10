@@ -24,7 +24,7 @@
         android:id="@+id/empty_txt__src_frg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="তথ্য খুঁজে পেতে সার্চ করুন "
+        android:text="Search to find information "
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginHorizontal="20dp"
