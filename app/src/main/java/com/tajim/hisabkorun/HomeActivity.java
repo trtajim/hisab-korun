@@ -156,13 +156,6 @@ public class HomeActivity extends AppCompatActivity {
                 } else if (item.getItemId()==R.id.report_bug){
                     startActivity(new Intent(HomeActivity.this, DnavHelper.class));
                     main.closeDrawer(GravityCompat.START);
-                } else if (item.getItemId()==R.id.share) {
-                    sqLiteDataBaseHisab.makeToast(HomeActivity.this, "Thanks for your interest, it will be available soon");
-                    main.closeDrawer(GravityCompat.START);
-                }else if (item.getItemId()==R.id.rate_us) {
-
-                    sqLiteDataBaseHisab.makeToast(HomeActivity.this, "Thanks for your interest, it will be available soon");
-                    main.closeDrawer(GravityCompat.START);
                 }else if (item.getItemId()==R.id.contact_us) {
 
                     showCustomAlert(R.raw.email_red,"Want to contact us? Select a platform to continue","Facebook","Whatsapp", ()->{
