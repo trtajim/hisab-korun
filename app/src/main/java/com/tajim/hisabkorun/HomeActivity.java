@@ -158,36 +158,12 @@ public class HomeActivity extends AppCompatActivity {
                     main.closeDrawer(GravityCompat.START);
                 }else if (item.getItemId()==R.id.contact_us) {
 
-                    showCustomAlert(R.raw.email_red,"Want to contact us? Select a platform to continue","Facebook","Whatsapp", ()->{
-
-                        Intent intent = new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("https://www.facebook.com/activelifestyle.com.bd"));
-                        PackageManager packageManager = getPackageManager();
-                        List<ResolveInfo> activities = packageManager.queryIntentActivities(intent, 0);
-                        boolean isFacebookAppInstalled = false;
-                        boolean isFacebookLiteInstalled = false;
-                        for (ResolveInfo activity : activities) {
-                            String packageName = activity.activityInfo.packageName;
-                            if (packageName.equals("com.facebook.katana")) {
-
-                                intent.setPackage("com.facebook.katana");
-                                isFacebookAppInstalled = true;
-                                break;
-                            } else if (packageName.equals("com.facebook.lite")) {
-                                intent.setPackage("com.facebook.lite");
-                                isFacebookLiteInstalled = true;
-                                break;
-                            }
-                        }
-
-                        if (!isFacebookAppInstalled && !isFacebookLiteInstalled) {
-                            intent.setPackage(null);
-                        }
-
-                        startActivity(intent);
+                    showCustomAlert(R.raw.email_red,"Want to contact us? Select a platform to continue","Linkedin","Github", ()->{
+                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/trtajim"));
+                        startActivity(myIntent);
 
                     },()->{
-                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=8801909131512&text=Hello!"));
+                        Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https:www.github.com/trtajim"));
                         startActivity(myIntent);
 
                     });
