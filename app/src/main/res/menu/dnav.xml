@@ -4,12 +4,6 @@
     >
 
 
-    <item
-        android:id="@+id/product_list"
-        android:icon="@drawable/baseline_list_alt_24"
-        android:iconTint="#000000"
-        android:title="Product List"
-        />
 
         <item
             android:id="@+id/trans_history"

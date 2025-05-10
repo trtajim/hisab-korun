@@ -48,7 +48,7 @@ public class HomeActivity extends AppCompatActivity {
     public static Boolean allHistory = false;
     public static String mainCon = "";
     View headerview;
-    TextView circle_txt_dnav, txt_dnav, balance_text_dnav;
+    TextView circle_txt_dnav, txt_dnav;
 
 
 
@@ -65,9 +65,7 @@ public class HomeActivity extends AppCompatActivity {
         headerview = navigationView.getHeaderView(0);
         circle_txt_dnav = headerview.findViewById(R.id.circle_txt_dnav);
         txt_dnav = headerview.findViewById(R.id.txt_dnav);
-        balance_text_dnav = headerview.findViewById(R.id.balance_txt_dnav);
         txt_dnav.setText(LoginActivity.name_usr);
-        balance_text_dnav.setText("Balance: "+LoginActivity.balance_usr);
         int themeColor = ContextCompat.getColor(this, R.color.theme);
 
         if (circle_txt_dnav.getBackground() instanceof GradientDrawable) {
@@ -201,10 +199,6 @@ public class HomeActivity extends AppCompatActivity {
 
                     });
                 }else if (item.getItemId()==R.id.log_out) {
-
-                    sqLiteDataBaseHisab.makeToast(HomeActivity.this, "Thanks for your interest, it will be available soon");
-                    main.closeDrawer(GravityCompat.START);
-                }else if (item.getItemId()==R.id.product_list) {
 
                     sqLiteDataBaseHisab.makeToast(HomeActivity.this, "Thanks for your interest, it will be available soon");
                     main.closeDrawer(GravityCompat.START);

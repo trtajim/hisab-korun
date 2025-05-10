@@ -31,7 +31,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:background="@android:color/transparent"
         app:cardCornerRadius="20dp"
         app:cardElevation="8dp"
@@ -126,30 +126,7 @@
                 android:translationY="-5dp"
                 />
 
-            <TextView
-                android:layout_below="@+id/con_pass_ed_login"
-                android:id="@+id/op5_lg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="আপনার বর্তমান ব্যালেন্স"
-                android:textColor="#6B1616"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/ballo"
-                android:textSize="15dp"
-                android:textStyle="bold"
 
-                />
-
-            <EditText
-                android:id="@+id/tk_ed_login"
-                android:layout_below="@+id/op5_lg"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="40dp"
-                android:layout_marginHorizontal="20dp"
-                android:translationY="-5dp"
-                />
 
 
 
@@ -168,8 +145,8 @@
                 android:backgroundTint="@color/theme"
                 android:fontFamily="@font/ballo"
                 android:textStyle="bold"
-                android:layout_below="@id/tk_ed_login"
-                android:layout_marginTop="5dp"
+                android:layout_below="@id/con_pass_ed_login"
+                android:layout_marginTop="20dp"
                 />
 
 
